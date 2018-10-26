@@ -42,7 +42,7 @@ contract Ownable {
 }
 
 
-contract ETHERCFeeModifiers is Ownable {
+contract SUNDEXFeeModifiers is Ownable {
 
     // common discount/rebate
     uint256 public commonDiscount;
@@ -53,7 +53,7 @@ contract ETHERCFeeModifiers is Ownable {
     // mapping of user addresses to fee rebate
     mapping (address => uint256) rebates;
 
-    function ETHERCFeeModifiers() public {
+    function SUNDEXFeeModifiers() public {
         commonDiscount = 0;
         commonRebate = 0;
     }
