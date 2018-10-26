@@ -329,18 +329,18 @@ contract PausableToken is StandardToken, Pausable {
 }
 
 
-contract ETHERCToken is PausableToken {
+contract SUNDEXToken is PausableToken {
 
     uint8 public constant decimals = 18;
-    string public constant name = "ETHERCToken";
-    string public constant symbol = "EET";
+    string public constant name = "SUNDEXToken";
+    string public constant symbol = "SUNX";
     uint256 public constant TOTAL_SUPPLY = 1000000000 * (10 ** uint256(decimals));
     string public welcome;
     address public admin;
 
     event Burn(address indexed burner, uint256 value);
 
-    function ETHERCToken() public {
+    function SUNDEXToken() public {
         admin = owner;
         totalSupply_ = TOTAL_SUPPLY;
         balances[owner] = TOTAL_SUPPLY;
